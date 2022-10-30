@@ -1,38 +1,470 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{ margin:0px;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif;
+ 
+}
+body{
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+a{
+  text-decoration: none;
   }
+
+ h3 {
+    color:  rgb(238, 151, 20);
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  h2{
+    color:  rgb(238, 151, 20);
+      font-weight: bold;
+      font-size: 1.5rem;
+  }
+  h1{
+    color:  rgb(238, 151, 20);
+      font-weight: bold;
+  }
+  .images {
+    display: flex;
+    column-gap: 4%;
+    margin: 1rem;;
+  }
+.images img{
+  
+  
+  border: 1px solid hsl(0, 4%, 54%);
+  
+  box-sizing: border-box;
+
+  box-shadow: 10px 10px 10px #5e5959;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navbar{
+  background-color: black;
+display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  
+  
+}
+.navbar .ul-list li{
+ 
+  display: inline-block;  
+}
+.navbar li{
+  padding: 1.5rem;
+  list-style: none;
+  
+}
+
+.navbar a{
+  text-decoration: none;
   color: white;
+  
 }
 
-.App-link {
-  color: #61dafb;
+a:hover {
+  color: rgb(238, 151, 20);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.firstblock{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  padding: 1rem;
+}
+
+
+
+.firstblock a{
+  color: rgb(0, 0, 0);
+  
+}
+a:hover {
+  color: rgb(238, 151, 20);
+}
+
+.secondblock{
+ 
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    padding: 1rem;
+  
+}
+
+.socialicons{
+ margin-top:0.1rem;
+ margin-left:2rem;
+  width: 50%;
+  
+  font-size: 1.5rem;
+}
+
+.campaigndata{
+  column-count: 3;
+ 
+  width: 50%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    padding: 1rem;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+    column-rule-color: rgb(71, 79, 82);
+    column-gap: 40px;
+}
+
+
+
+.thirdblock .container{
+  display: flex;
+justify-content: space-between;
+padding-top: 20px;
+flex-wrap:wrap;
+  
+  
+}
+h1{
+  margin: 1rem;
+}
+
+.deals{
+  width:23%;
+  min-width: 250px;
+  padding: 1rem 1.5rem;
+  border: 1px solid hsl(0, 4%, 54%);
+  margin: 3rem;
+  box-sizing: border-box;
+  font-size: 1rem;
+  box-shadow: 10px 10px 10px #5e5959;
+  position: relative;
+
+}
+.btn button{
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+color: rgb(0, 0, 0);
+font-weight: bold;
+height: 2rem;
+width: 6rem;
+background-color: #cecaca;
+margin-top:1rem;
+font-size: 1.2rem;
+border: none;
+text-align: center;
+border-radius: 4px;
+transition-duration: 0.4s;
+
+}
+.btnn button{
+  height: 2rem;
+width: 15rem;
+margin:2.5rem;
+border: none;
+background-color: #cecaca;
+cursor: pointer;
+color: rgb(0, 0, 0);
+font-weight: bold;
+font-size: 1.2rem;
+transition-duration: 0.4s;
+text-align: center;
+
+}
+button:hover {
+  background-color:  rgb(238, 151, 20);
+  color: white;
+  border: none;
+}
+
+.faqs {
+	width: 100%;
+	max-width: 768px;
+	margin: 0 auto;
+	padding: 15px;
+}
+
+.faqs .faq {
+	margin: 15px;
+	padding: 15px;
+	background-color: #FFF;
+	border-radius: 8px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.faqs .faq .faq-question {
+	position: relative;
+	font-size: 20px;
+	padding-right: 80px;
+  color:  rgb(238, 151, 20);
+	transition: all 0.4s ease;
+}
+
+.faqs .faq .faq-question::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 0px;
+	transform: translateY(-50%);
+	width: 30px;
+	height: 30px;
+
+	background-image: url('./downarrow.svg'); 
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	transition: all 0.4s ease-out;
+}
+
+.faqs .faq .faq-answer {
+	opacity: 0;
+	max-height: 0;
+	overflow-y: hidden;
+	transition: all 0.4s ease-out;
+}
+
+.faqs .faq.open .faq-question {
+	margin-bottom: 15px;
+}
+
+.faqs .faq.open .faq-question::after {
+	transform: translateY(-50%) rotate(180deg);
+}
+
+.faqs .faq.open .faq-answer {
+	max-height: 1000px;
+	opacity: 1;
+}
+
+.details{
+  margin:2.5rem;
+  
+}
+
+.pitch {
+  margin:2.5rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  
+.deck {
+  margin:2.5rem; 
+  font-size: 1rem;
+}
+
+.deck button{
+  height: 2rem;
+width: 10rem;
+margin:2.5rem;
+border: none;
+background-color: #cecaca;
+cursor: pointer;
+color: rgb(0, 0, 0);
+font-weight: bold;
+font-size: 1.2rem;
+transition-duration: 0.4s;
+text-align: center;
+
+}
+button:hover {
+  background-color:  rgb(238, 151, 20);
+  color: white;
+  border: none;
+}
+
+hr{
+  margin-top:1rem;
+}
+.topbtn {
+  font-size: 1rem;
+  width: 6rem;
+  height: 6rem;
+  color: rgb(238, 151, 20);
+ 
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+}
+/* Responsive style */
+
+@media (max-width: 375px) {
+
+  .navbar li{
+    font-size: .8rem;
   }
+  .thirdblock .container{
+  display: flex;
+justify-content: space-between;
+padding-top: 20px;
+}
+body{
+  overflow-x: hidden;
+}
+.firstblock{
+  width:100%;
+  font-size: .8rem;
+
+}
+
+.secondblock{
+  width:15rem;
+  }
+  .campaigndata{
+    font-size: .7rem;
+    width: 100%;
+  }
+  .campaigndata h3{
+    font-size: 1rem;
+  }
+   .deck{
+    margin:1rem;
+    width: 100%;
+  }
+  .pitch img{
+    width: 17rem;
+  }
+  .pitch p{
+font-size: 1rem;
+  }
+  
+
+}
+
+@media (max-width: 393px) {
+  .navbar li{
+    font-size: .8rem;
+
+  }
+  .thirdblock .container{
+  display: flex;
+justify-content: space-between;
+padding-top: 20px;
+}
+/* body{
+  overflow-x: hidden;
+} */
+.firstblock{
+  width:100%;
+  font-size: .8rem;
+
+}
+
+.secondblock{
+  width:15rem;
+  }
+  .campaigndata{
+    font-size: .6rem;
+    width: 100%;
+  }
+  .campaigndata h3{
+    font-size: 1rem;
+  }
+   .deck{
+    margin:1rem;
+    width: 100%;
+  }
+  .pitch img{
+    width: 17rem;
+  }
+  .pitch p{
+font-size: 1.5rem;
+  }
+
+}
+@media (max-width: 390px) {
+  .navbar li{
+    font-size: .8rem;
+  }
+  .thirdblock .container{
+  display: flex;
+justify-content: space-between;
+padding-top: 20px;
+}
+body{
+  overflow-x: hidden;
+}
+.firstblock{
+  width:100%;
+  font-size: .8rem;
+
+}
+
+.secondblock{
+  width:20rem;
+  }
+  .campaigndata{
+    font-size: .4rem;
+    width: 100%;
+  }
+  .campaigndata h3{
+    font-size: 1rem;
+  }
+   .deck{
+    margin:1rem;
+    width: 100%;
+  }
+  .pitch img{
+    width: 17rem;
+  }
+  .pitch p{
+font-size: 1.5rem;
+  }
+
+}
+
+
+@media (max-width: 1024px) {
+  .navbar li{
+    font-size: .8rem;
+  }
+  .thirdblock .container{
+  display: flex;
+justify-content: space-between;
+padding-top: 20px;
+}
+body{
+  overflow-x: hidden;
+}
+.firstblock{
+  width:100%;
+  font-size: .8rem;
+
+}
+
+.secondblock{
+  width:35rem;
+  }
+  .campaigndata{
+    font-size: 1rem;
+    width: 100%;
+  }
+  .campaigndata h3{
+    font-size: 1rem;
+  }
+   .deck{
+    margin:1rem;
+    width: 100%;
+  }
+  .pitch img{
+    width: 17rem;
+  }
+  .pitch p{
+font-size: 1rem;
+  }
+
 }
